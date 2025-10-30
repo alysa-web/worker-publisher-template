@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "WORKER-NAME",
+  "name": "alyssa",
   "main": "src/index.ts",
   "compatibility_date": "2025-02-04",
   "observability": {
@@ -8,9 +8,9 @@
   },
 
   // Add this to your wrangler.jsonc
-  "kv_namespaces": [
+  "kv_namespaces": ["worker_mappings",
     {
-      "binding": "KV",
+      "binding": "KV_BINDING",
       "id": "d252d6870ced406ca43ddf5d419c9b61",
       
       // Optional: preview_id used when running `wrangler dev` for local dev
